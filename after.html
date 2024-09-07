@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    {% if data == 'setosa' %}
+        <p>The Iris flower is of type Setosa.</p>
+    {% elif data == 'versicolor' %}
+        <p>The Iris flower is of type Versicolor.</p>
+    {% elif data == 'virginica' %}
+        <p>The Iris flower is of type Virginica.</p>
+    {% else %}
+        <p>Unknown class.</p>
+    {% endif %}
+    <a href="/">Try another prediction</a>
+</body>
+</html>

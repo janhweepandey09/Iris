@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Flower Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Iris Flower Detection</h1>
+        <form id="irisForm">
+            <label for="sepalLength">Sepal Length (cm):</label>
+            <input type="number" id="sepalLength" step="0.01" required>
+
+            <label for="sepalWidth">Sepal Width (cm):</label>
+            <input type="number" id="sepalWidth" step="0.01" required>
+
+            <label for="petalLength">Petal Length (cm):</label>
+            <input type="number" id="petalLength" step="0.01" required>
+
+            <label for="petalWidth">Petal Width (cm):</label>
+            <input type="number" id="petalWidth" step="0.01" required>
+
+            <button type="button" onclick="predictIris()">Predict</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+    <script src="new.js"></script>
+</body>
+</html>
